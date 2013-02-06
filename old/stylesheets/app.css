@@ -184,7 +184,7 @@ figure {
 	position:relative;
 }
 figure a {
-	background:url(/images/dailytidbit.jpeg) no-repeat 0 0;
+	background:url(../images/dailytidbit.jpeg) no-repeat 0 0;
 	background-size:cover;
 	display:block;
 	width:100%;
@@ -266,7 +266,7 @@ figure h1, .inner.thoughts .sub figure h1 {
 }
 [role=main] header {
 	display:table;
-	background:url(/images/instagram.jpg) no-repeat center center;
+	background:url(../images/instagram.jpg) no-repeat center center;
 	background-size:cover;
 	height:15em;
 	margin:0 0 1.5em;

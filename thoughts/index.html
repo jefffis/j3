@@ -1,0 +1,12 @@
+---
+layout: default
+title: Thoughts
+---
+<header>
+  <h1>Recent Thoughts</h1>
+</header>
+<ul class="sub">
+  {% for post in site.categories.thought %}
+  <li><a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
