@@ -79,11 +79,12 @@ header {
 }
 header h2 {
 	margin:0;
-	padding:1em 1.5em 1em 1em;
+	padding:1em 1.15em 1em 1em;
 	text-align:right;
 	float:right;
 	position:relative;
 	z-index:2;
+	letter-spacing:-.04em;
 }
 /*header h2:after {
 	content:attr(data-icon);
@@ -109,6 +110,7 @@ header h3 {
 	z-index:2;
 	color:white;
 	cursor:pointer;
+	font-size:.85em;
 }
 header h3:active {
 	opacity:.75;
@@ -118,14 +120,14 @@ header h3 a {
 	height:2em;
 	width:2em;
 	position:relative;
-	top:1em;
+	top:2.75em;
 	left:1em;
 }
 header h3:before {
 	content:attr(data-icon);
 	position:absolute;
 	left:.4em;
-	top:.15em;
+	top:.7em;
 	line-height:1;
 	font-size:300%;
 }
@@ -204,13 +206,19 @@ figure.mood a {
 .works figure {
 	height:70px;
 	width:100%;
+	margin:0 0 1em;
 	background:#0BAADB;
 	overflow:hidden;
 }
 .works figure a h1 {
-	bottom:25px;
-	right:25px;
+	bottom:0;
+	right:0;
+	width:auto;
+	margin:0;
+	height:70px;
+	padding:28px 25px 20px;
 	text-align:right;
+	background:#0BAADB;
 }
 
 figure a:hover {
@@ -250,7 +258,8 @@ figure h1, .inner.thoughts .sub figure h1 {
 	padding:1em;
 	margin:0;
 	position:relative;
-	top:-1.05em;
+	top:auto;
+	bottom:0;
 	color:white;
 	font-size:100%;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
@@ -269,7 +278,7 @@ figure h1, .inner.thoughts .sub figure h1 {
 	display:table-cell;
 	height:100%;
 	vertical-align:middle;
-	font-size:300%;
+	font-size:200%;
 	padding:0 1em;
 	color:white;
 	text-align:center;
@@ -443,6 +452,15 @@ article li, .thoughts article h2 {
 }
 
 @media screen and (min-width:30em) {
+	header h3 {
+		font-size:1.25em;
+	}
+	header h3:before {
+		top:.3em;
+	}
+	header h3 a {
+		top:1.5em;
+	}
 	figure a {
 		min-height:25em;
 	}
@@ -466,6 +484,9 @@ article li, .thoughts article h2 {
 		position:absolute;
 		top:-.1em;
 		left:-1em;
+	}
+	[role=main] header h1 {
+		font-size:300%;
 	}
 }
 @media screen and (min-width:50em) {
