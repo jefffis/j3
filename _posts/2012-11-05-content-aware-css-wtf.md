@@ -1,6 +1,6 @@
 ---
 layout: thoughts_entry
-title: Content-Aware CSS WTF
+title: Content-Aware CSS, WTF
 categories: [thought]
 ---
 

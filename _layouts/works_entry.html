@@ -7,6 +7,10 @@ layout: default
 		<h1><span>{{page.title}}</span></h1>
 		<img src="{{ page.image }}" />
 	</figure>
-	{% endif %}
+	<div class="details">
+		{{ content }}
+	</div>
+	{% else %}
 	{{ content }}
+	{% endif %}
 </div>
