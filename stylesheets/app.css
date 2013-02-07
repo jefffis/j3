@@ -39,14 +39,14 @@ body {
 }
 h1, h2, h3 {
 	line-height:1.1;
-	/*font-family:'OldStandardTTRegular', serif;*/
+	font-family:'Domine', serif;
 }
 h1 { font-size:2.5em; }
 h2 { font-size:2em; }
 h3 { font-size:1.5em; }
 
 h1, h2, h3, h4, p {
-	margin:1em 0 .3em;
+	margin:1.25em 0 .65em;
 }
 
 .cf:before, .cf:after, header:before, header:after { content:""; display:table; }
@@ -59,10 +59,14 @@ a {
 	-moz-transition:.2s all ease-out;
 	transition:.2s all ease-out;
 }
+a:hover {
+	text-decoration:none;
+}
 a:active {
 	-webkit-transition:none;
 	-moz-transition:none;
 	transition:none;
+	text-decoration:none;
 }
 
 header {
@@ -263,6 +267,7 @@ figure h1, .inner.thoughts .sub figure h1 {
 	color:white;
 	font-size:100%;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
+	z-index:2;
 }
 [role=main] header {
 	display:table;
@@ -329,13 +334,22 @@ li a {
 	text-decoration:none;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
 }
+li a.alt {
+	background:#7bc9b6;
+}
 li a:hover {
 	background:#0987AD;
+}
+li a.alt:hover {
+	background:#4ba48e;
 }
 li a:active {
 	background:#037699;
 	padding-top:1.05em;
 	padding-bottom:.95em;
+}
+li a.alt:active {
+	background:#248069;
 }
 li a:before {
 	content:attr(data-icon);
@@ -343,8 +357,36 @@ li a:before {
 	left:-.5em;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
+article li a {
+	display:inline;
+	padding:0;
+	background:none;
+	color:#0BAADB;
+	text-decoration:underline;
+	text-shadow:none;
+}
+article li a:hover {
+	background:none;
+}
 
-.button {
+pre {
+	font-size:85%;
+	padding:1em;
+	background:#7bc9b6;
+	color:white;
+	-webkit-font-smoothing:subpixel-antialiased;
+	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
+}
+
+article img {
+	display:block;
+	width:100%;
+	max-width:100%;
+	margin:1em 0 1em;
+	border:3px solid #ccc;
+}
+
+.button, .view-more {
 	display:block;
 	margin:2em auto 1em;
 	width:100%;
@@ -355,16 +397,19 @@ li a:before {
 	text-decoration:none;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
 }
+.view-more {
+	margin-bottom:1.5em;
+}
 .button:before {
 	content:attr(data-icon);
 	position:relative;
 	left:-.5em;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
-.button:hover {
+.button:hover, .view-more:hover {
 	background:#0987AD;
 }
-.button:active {
+.button:active, .view-more:active {
 	background:#037699;
 	padding:.6em .5em .4em;
 }

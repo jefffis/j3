@@ -2,7 +2,7 @@
 layout: default
 ---
 <figure>
-	<a href="">
+	<a href="/work/dailytidbit/">
 		<h1><span>Dailytidbit</span></h1>
 		<img src="/images/dailytidbit.jpeg" />
 	</a>
@@ -18,7 +18,7 @@ layout: default
 		{% for post in site.categories.thought limit:5 %}
 		<li>
 			{% if post.external_link %}
-			<a href="{{ post.external_link }}" class="alt" data-icon="⚡">{{ post.title }}</a>
+			<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
 			{% else %}
 			<a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a>
 			{% endif %}

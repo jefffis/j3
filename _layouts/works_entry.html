@@ -2,11 +2,11 @@
 layout: default
 ---
 <div class="work">
+	{% if page.image %}
 	<figure>
 		<h1><span>{{page.title}}</span></h1>
 		<img src="{{ page.image }}" />
 	</figure>
-	<div class="details">
-		{{ content }}
-	</div>
+	{% endif %}
+	{{ content }}
 </div>

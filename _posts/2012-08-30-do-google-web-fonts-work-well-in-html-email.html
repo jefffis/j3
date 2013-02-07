@@ -1,0 +1,20 @@
+---
+layout: thoughts_entry
+title: Do Web Fonts Work In Email?
+categories: [thought]
+---
+
+<p>I&#8217;d seen a few tests on (especially on <a href="http://www.campaignmonitor.com/css/" target="_blank">Campaign Monitor</a>) about CSS (mainly interested in CSS3) and support across email programs. Due to the lack of standards, there isn&#8217;t great support outside of the Apple realm. However, I wanted to test to see how well we could use some of the new <a href="http://code.google.com/webfonts" target="_blank">Google Web Fonts</a> (as using Typekit is not really an option yet).</p>
+<p><strong>Update:</strong> <a href="http://www.campaignmonitor.com/blog/post/3897/using-web-fonts-in-email">CampaignMonitor has a good, and more recent</a> round-up of this as well here.</p>
+<p>Using our trusty tester <a href="http://litmusapp.com" target="_blank">Litmusapp</a>, I created a super simple email and dropped some &#8216;<a href="http://code.google.com/webfonts/family?family=Droid+Serif" target="_blank">Droid Serif</a>&#8216; action in there. After a few minutes, here&#8217;s what I saw:</p>
+<p><img src="http://thinkdesign.net/wp-content/uploads/2010/09/google-fonts-litmus-test-small.png" /></p>
+<p>Not too surprising, only 5 clients supported this feature. However, what was more surprising was which clients supported them:</p>
+<ul>
+	<li>Apple Mail (3 & 4),</li>
+	<li>Entourage 2008,</li>
+	<li>Thunderbird 3,</li>
+	<li>Postbox,</li>
+	<li>Lotus Notes 8 (but not 8.5)</li>
+</ul>
+<p>I found it very interesting, surprising, and a tad disheartening that the iPhone, iPad, and Mobile.me all failed this test, while their desktop cousins passed. Why does Lotus Notes 8 work, and not 8.5? And how does Gmail not pass this test when it&#8217;s using Google code? Oh well, for now, we&#8217;re still not where we (or maybe just me) want to be, but as you can see progress is as progress does.</p>
+<p>As usual, the takeaway is declare similar, web-safe fall back fonts for each web font and test, test, test. I&#8217;d suggest using Litmus, but even just creating a few free accounts can help save you some embarrassment (in terms of design looking clunky or completely wrong) and possible SPAM complaints.</p>
