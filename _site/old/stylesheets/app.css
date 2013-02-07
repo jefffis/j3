@@ -184,20 +184,20 @@ figure {
 	position:relative;
 }
 figure a {
-	/*background:url(/images/dailytidbit.jpeg) no-repeat 0 0;
-	background-size:cover;*/
+	background:url(../images/dailytidbit.jpeg) no-repeat 0 0;
+	background-size:cover;
 	display:block;
 	width:100%;
-	/*min-height:15em;
+	min-height:15em;
 	padding:3em;
 	-webkit-transition:.2s all ease-out;
 	-moz-transition:.2s all ease-out;
-	transition:.2s all ease-out;*/
+	transition:.2s all ease-out;
 }
 
-/*figure.mood a {
+figure.mood a {
 	background:url(http://jefff.co/images/css-mood-board.png) no-repeat 0 0;
-}*/
+}
 
 .works figure a {
 	height:70px;
@@ -221,10 +221,10 @@ figure a {
 	background:#0BAADB;
 }
 
-/*figure a:hover {
+figure a:hover {
 	box-shadow:0 0 5px rgba(0,0,0,0.5) inset, 0 0 25px rgba(0,0,0,0.25) inset;
 	opacity:.8;
-}*/
+}
 figure img {
 	max-width:100%;
 	display:block;
@@ -266,7 +266,7 @@ figure h1, .inner.thoughts .sub figure h1 {
 }
 [role=main] header {
 	display:table;
-	background:url(/images/instagram.jpg) no-repeat center center;
+	background:url(../images/instagram.jpg) no-repeat center center;
 	background-size:cover;
 	height:15em;
 	margin:0 0 1.5em;
@@ -296,15 +296,9 @@ figure h1, .inner.thoughts .sub figure h1 {
 	padding-top:2em;
 	text-align:center;
 }
-[role=main] .work h2 {
-	padding-top:0;
-}
 [role=main] ul, footer ul {
 	margin:0 auto;
 	padding:0;
-}
-[role=main] ul.sub.pad {
-	margin-top:3em;
 }
 [role=main] h2 + ul {
 	margin-top:2em;
@@ -419,14 +413,6 @@ footer li a:active {
 	padding:0 0 .5em;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
-.details .middle {
-	display:block;
-	margin:0 auto;
-	max-width:100%;
-}
-.details.c * {
-	text-align:center;
-}
 article h2 {
 	position:relative;
 }
@@ -459,9 +445,6 @@ article {
 article li, .thoughts article h2 {
 	text-align:left;
 	padding:0;
-}
-.thoughts article h2:first-child {
-	margin-top:0;
 }
 .thoughts article li {
 	list-style:disc;

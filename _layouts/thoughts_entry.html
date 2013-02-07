@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<header>
-	<h1>{{page.title}}</h1>
-</header>
-<article>
-	{{ content }}
-</article>
+<div class="thoughts">
+	<header>
+		<h1>{{page.title}}</h1>
+	</header>
+	<article>
+		<h2 class="h" data-icon="⚒">{{page.date | date: "%B %d %Y"}}</h2>
+		{{ content }}
+		<a href="/thoughts" class="button" data-icon="✈">Back to Thoughts</a>
+	</article>
+</div>

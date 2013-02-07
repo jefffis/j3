@@ -4,8 +4,6 @@ title: Content-Aware CSS WTF
 categories: [thought]
 ---
 
-<h2 class="h" data-icon="⚒">November 5, 2012 <span>CSS</span></h2>
-
 Media Queries are awesome. They really are. Being able to detect a users device width, height, and/or orientation and then being able to style the content they view accordingly is an invaluable tool in any web designers/developers toolkit. They are paramount to the responsive design movement, and makes porting content from device to device without having to create multiple templates somewhat of a synch. And better still, every day, new possibilities/options are being added to them to make them more powerful.
 
 __* Note: this may be foolish and unnecessary, just something I’ve been noodling on.__

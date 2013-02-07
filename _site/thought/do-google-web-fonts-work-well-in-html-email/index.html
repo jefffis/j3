@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en-us" class="inner">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title dir="ltr"> Do Web Fonts Work In Email? |  Jefff.co</title>
+	<meta name="description" content="" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css' /> 
+	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">
+	
+	//ga stuffs
+	
+	</script>
+</head>
+<body>
+	<header role="banner">
+		<h2 data-icon="☁"><a href=""><span>made by</span> jefff</a></h2>
+		<h3 data-icon="⚙"><a href="#menu"></a></h3>
+	</header>
+	<div role="main">
+		<div class="thoughts">
+	<header>
+		<h1>Do Web Fonts Work In Email?</h1>
+	</header>
+	<article>
+		<h2 class="h" data-icon="⚒">August 30 2012</h2>
+		<p>I’d seen a few tests on (especially on <a href='http://www.campaignmonitor.com/css/'>Campaign Monitor</a>) about CSS (mainly interested in CSS3) and support across email programs. Due to the lack of standards, there isn’t great support outside of the Apple realm. However, I wanted to test to see how well we could use some of the new <a href='http://www.google.com/webfonts'>Google Web Fonts</a> (as using Typekit is not really an option yet).</p>
+
+<p><strong>Update:</strong> <a href='http://www.campaignmonitor.com/blog/post/3897/using-web-fonts-in-email'>CampaignMonitor has a good, and more recent round-up of this as well here</a>.</p>
+
+<p><strong>Note: this is a re-post of an old article I wrote here.</strong></p>
+
+<p>Using our <a href='https://litmus.com/'>trusty tester Litmusapp</a>, I created a super simple email and dropped some <a href='http://code.google.com/webfonts/specimen/Droid+Serif'>‘Droid Serif‘</a> action in there. After a few minutes, here’s what I saw: <img alt='Litmus screenshot' src='http://thinkdesign.net/wp-content/uploads/2010/09/google-fonts-litmus-test-small.png' /></p>
+
+<p>Not too surprising, only 5 clients supported this feature. However, what was more surprising was which clients supported them:</p>
+
+<p>Apple Mail (3 &amp; 4): <img alt='Apple Mail' src='http://thinkdesign.net/wp-content/uploads/2010/09/apple-3-small.png' /></p>
+
+<p>Entourage 2008: <img alt='Entourage 2008' src='http://thinkdesign.net/wp-content/uploads/2010/09/entourage-small.png' /></p>
+
+<p>Thunderbird 3: <img alt='Thunderbird 3' src='http://thinkdesign.net/wp-content/uploads/2010/09/entourage-small.png' /></p>
+
+<p>Postbox: <img alt='Postbox' src='http://thinkdesign.net/wp-content/uploads/2010/09/postbox-small.png' /></p>
+
+<p>Lotus Notes 8 (but not 8.5): <img alt='Lotus Notes 8' src='http://thinkdesign.net/wp-content/uploads/2010/09/lotus-notes-small.png' /></p>
+
+<p>I found it very interesting, surprising, and a tad disheartening that the iPhone, iPad, and Mobile.me all failed this test, while their desktop cousins passed. Why does Lotus Notes 8 work, and not 8.5? And how does Gmail not pass this test when it’s using Google code? Oh well, for now, we’re still not where we (or maybe just me) want to be, but as you can see progress is as progress does.</p>
+
+<p>As usual, the takeaway is declare similar, web-safe fall back fonts for each web font and test, test, test. I’d suggest using Litmus, but even just creating a few free accounts can help save you some embarrassment (in terms of design looking clunky or completely wrong) and possible SPAM complaints.</p>
+		<a href="/thoughts" class="button" data-icon="✈">Back to Thoughts</a>
+	</article>
+</div>
+	</div>
+	<footer id="menu">
+		<h3 data-icon="☰">Navigation</h3>
+		<ul>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/thoughts">Thoughts</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="">Resume</a></li>
+			<li><a href="http://twitter.com/jefffis">Twitter</a></li>
+			<li><a href="/" data-icon="↟">Home</a></li>
+		</ul>
+		<hr data-icon="☂" />
+		<div>
+			<p><strong>Jeff Doan</strong> is a web designer/front-end tinkerer living and working in good ol&rsquo; Arlington, VA.</p>
+			<h4>&copy; 20-something&mdash;2012; built with jekyll, lots of UNICODE-ness and some other trickery.</h4>
+			<p>Reading Now: <a href="http://www.amazon.com/The-Twelve-Book-Passage-Trilogy/dp/0345504984" target="_blank">The Twelve</a>,<br />just finished <a href="http://www.amazon.com/The-Prague-Cemetery-Umberto-Eco/dp/0547577532" target="_blank">The Prague Cemetery</a>.</p>
+		</div>
+	</footer>
+	<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/javascripts/app.js"></script>-->
+</body>
+</html>

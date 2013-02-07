@@ -1,15 +1,13 @@
 <!doctype html>
-{% if page.url != '/' %}
-<html lang="en-us" class="inner{% if page.url == '/work/*' %} thoughts{% endif %}">
-{% else %}
-<html lang="en-us">
-{% endif %}
+
+<html lang="en-us" class="inner">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-	<title dir="ltr">{% if page.title %} {{ page.title }} | {% endif %} Jefff.co</title>
+	<title dir="ltr"> Dailytidbit |  Jefff.co</title>
 	<meta name="description" content="" />
 	
 	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css' /> 
@@ -27,7 +25,17 @@
 		<h3 data-icon="⚙"><a href="#menu"></a></h3>
 	</header>
 	<div role="main">
-		{{ content }}
+		<div class="work">
+	<figure>
+		<h1><span>Dailytidbit</span></h1>
+		<img src="/images/dailytidbit.jpeg" />
+	</figure>
+	<div class="details">
+		<h2 data-icon='⚒'>design + CSS3 / jQuery + email template build + hand-picked curation</h2>
+<p>The best, or sexiset, way to learn a new word each day. Learn a new word each day. curated &amp; hand-picked goodness emailed to your inbox daily.</p>
+<a class='button' data-icon='✈' href=''>View project</a>
+	</div>
+</div>
 	</div>
 	<footer id="menu">
 		<h3 data-icon="☰">Navigation</h3>

@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en-us" class="inner">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title dir="ltr"> CSS Generated Content |  Jefff.co</title>
+	<meta name="description" content="" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css' /> 
+	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">
+	
+	//ga stuffs
+	
+	</script>
+</head>
+<body>
+	<header role="banner">
+		<h2 data-icon="☁"><a href=""><span>made by</span> jefff</a></h2>
+		<h3 data-icon="⚙"><a href="#menu"></a></h3>
+	</header>
+	<div role="main">
+		<div class="thoughts">
+	<header>
+		<h1>CSS Generated Content</h1>
+	</header>
+	<article>
+		<h2 class="h" data-icon="⚒">July 20 2012</h2>
+		<p><strong><img src="http://jhische.com/dailydropcap/W-1-cap.png" title="Daily Drop Cap by Jessica Hische" alt="W" id="drop-cap" /><del>W</del>e&rsquo;re going to look at when to use CSS generated content and when not to.</strong> CSS generated content? Yep, you read that right. It&rsquo;s a real thing. A pretty awesome thing too, honestly. What it enables web designers and developers to do is pretty swanky and [can be] pretty helpful to boot.</p>
+<p>So what do I mean when I say <a href="http://www.w3.org/TR/CSS21/generate.html" target="_blank">CSS generated content</a>? Well, it&rsquo;s somewhat complicated, so lemme try to break it down. CSS generated content is a technique that allows content (HTML and/or images) to be <a href="http://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">inserted into the DOM</a> without actually being included in the HTML. <strong>Say what?</strong> A bit odd, but basically if you view the source of a page using this, you won&rsquo;t find the corresponding code in the HTML. It&rsquo;s being added in via CSS, and therefore is usually considered just for presentational purposes.</p>
+			<p>For this, you, or whomever, will be <a href="http://reference.sitepoint.com/css/pseudoelements" target="_blank">using pseudo elements</a> of <code>:before</code> and <code>:after</code>, relating to a particular elements normal styling. For example (just a stupidly simple example):</p>
+<pre>
+&lt;style type="text/css"&gt;
+  * {
+    padding:0;
+    margin:0;
+  }
+  body {
+    padding:50px;
+    text-align:center;
+    width:500px;
+    margin:0 auto;
+    font-family:sans-serif;
+    line-height:1.5;
+  }
+  h1 {
+    font-size:40px;
+    text-transform:uppercase;
+  }
+  h1:after {
+    content:"Wowzers!";
+    display:block; <span>/* optional depending on what you want to do with this */</span>
+    color:blue;
+    font-size:40%;
+    text-transform:none;
+    padding:10px 0 40px;
+    opacity:.5;
+  }
+  p {
+    text-align:left;
+  }
+&lt;/style&gt;
+</pre>
+<p><a href="samp" class="view-more wide more">View Demo</a></p>
+<p>So after all this, we have the <code>&lt;h1&gt;</code> with <code>This be a headline.</code> and right after we have <code>Wowzers!</code>. But it&rsquo;s no where in the HTML markup (and, assuming this was coded normally, no where on the page at all). We specified this in the CSS, and then using some CSS trickery we rendered this in HTML. It&rsquo;s not really rendered in the HTML, it&rsquo;s just visually there. That leads into the next section, but for now let's focus on what else we can do. Right now this content is static, and we&rsquo;d have to go into our CSS every time we wanted to change this. So, what&rsquo;s a better way to do this then? Enter HTML5. With HTML5 we can specify new attributes for any element by prefixing it with data-. So let&rsquo;s create one called data-info on a new div.</p>
+<pre>
+  &lt;div data-info="This be some info."&gt;&lt;/div&gt;
+</pre>
+<p>And add this CSS:</p>
+<pre>
+div:after {
+  content:attr(data-info);
+  display:block;
+  margin:40px 0;
+  font-weight:bold;
+  text-align:right;
+  opacity:.5;
+}
+</pre>
+<p>Then, the content in this new attribute will be displayed when we view this in our browser. Right now this is still static, but if you&rsquo;re site is running on a server-side language, or even with some JavaScript, this can become dynamic and able to change on the fly, or if you&rsquo;re rendering multiples of these elements. A popular trend, or technology perhaps (and something I really love!), is something called icons fonts, and most of these work the same way as this. I <a href="/misc/svg/">blogged more on Icon Fonts and CSS generated content</a> a few weeks ago too.</p>
+<h2>Okay, so now we know what I&rsquo;m talking about, why?</h2>
+<p>Because it&rsquo;s awesomesauce, right? Well yes, but that&rsquo;s not a good reason to do something on it&rsquo;s own. So what are some creative ways we can use this? The number reason I can think of is for optimizing for page load time. With some creativity and a bit o&rsquo; gumption, we can often replace extra images with some generated content. A prime example was a simple interface I just worked on for Google Chromebook (see image below). The design comps called for a circular icon with a &lsquo;i&rsquo; in it to signal &lsquo;hey, this is some important info&rsquo;. Rather than create another image and require another http request, this was done simply with generated content. Plus, since most often these will be using HTML content, they are resolution independent, which is becoming more and more important as more retina (or high-res) screens become more ubiquitous.</p>
+<p><a href="/misc/googles/add-change.html"><img src="google-image.png" alt="Example of the Goolge site using CSS generated content." /></a></p>
+<p>Another reason to use this might be to add in content to a page dynamically that is not important enough to be in the HTML, or important enough for SEO purposes, but still helps users visually. Kind of like <a href="http://www.designfridge.co.uk/articles/guest-post/improve-ux-with-microcopy" target="_blank">how microcopy helps users</a> get through forms and other non-linear tasks in an app, dynamic CSS generated content can also help out here. I can imagine using this technique with e-commerce site and in particular a product page. For example, for a site that sells different colors of a product, a lot of times the image is shown with a radio button below, or some other method selecting it. If the site has been setup properly, the image has an alt tag with a  good description of the color for screen readers and spiders. This is great, but using CSS generated content, we can perhaps add a bit more useful info for the rest of us, not to mention the color blind. All we&rsquo;d need to do is to add in a data-color attribute to the HTML likes:</p>
+<pre>
+&lt;div class="samp" data-color="Red -- hex color #d0272c"&gt;
+  &lt;img width="50" height="35" alt="color-red" src="color-red.png" class="samp"&gt;
+  &lt;br /&gt;
+  &lt;input id="foo" type="radio" checked="checked" value="foo" name="foo"&gt;
+  &lt;br /&gt;
+&lt;/div&gt;
+</pre>
+<p>And add some CSS:</p>
+<pre>
+.samp:after {
+  content:attr(data-color);
+  display:block;
+  font-size:11px;
+}
+</pre>
+<p>And there we have it. It&rsquo;s a little bit extra to help massage the user in their selection process, but it&rsquo;s not required for screen readers or spiders (as this content in already in the image alt tag). Another way to use this I&rsquo;ve seen done often is in print stylesheets to include an iteration of the actual URL for a link. Obviously, a printed page won&rsquo;t be clickable (although some people still struggle with this&hellip;), so it's nice to be able to include the URL that was linked in the printout, or PDF, as well. So, how would we do this? Simple:</p>
+<p><a href="samp/index.html#help" class="view-more wide more">View Demo</a></p>
+<pre>
+a:after {
+  content:attr(href);
+  font-size:10pt; /* for easy reading */</span>
+}
+</pre>
+<p>On the other hand, using generated content to render a design element that&rsquo;s too complicated to just be HTML is another great reason for going this route. Say you have a design comp that calls for some sort of crazy border, or design or whatever, that is to follow all articles on a page. Rather than hard-coding these in (either in a static site, or with dynamic scripting), using CSS generated content is a better way to do this, for a few reasons. There are no extra images or empty HTML elements inserted to the page, and thus there is less HTML to be downloaded, always a good thing. Okay, how do we do this now?</p>
+<pre>
+.reused-design:after {
+  content:url(facebook-icon.png); /* your image URL */</span>
+  display:block;
+  height:50px; <span>/* can be any size */</span>
+  width:50px; <span>/* can be any size */</span>
+  margin:10px auto; <span>/* can be anything */</span>
+}
+</pre>
+<p><a href="samp/index.html#reuse" class="view-more wide">View Demo</a></p>
+<h2>Pretty slick stuff, right?</h2>
+<p>This isn&rsquo;t even the half of it. In terms of purely styling a page, <strong>there&rsquo;s tons of great examples out there that other folk have posted</strong>. However, I think we really need to push ourselves to really use the dynamic ability of this technique to add more beneficial content / location-aware content to our apps whenever possible.</p>
+<h2>Some resources:</h2>
+<ul>
+	<li><a href="/misc/css-only-image-drop-shadow/" target="_blank">CSS-only Drop Shadows (by me, but tweaked of another)</a></li>
+	<li><a href="http://viget.com/inspire/css-generated-content" target="_blank">My New Best Friend: CSS Generated Content</a></li>
+	<li><a href="http://css-tricks.com/pseudo-element-roundup/" target="_blank">A Whole Bunch of Amazing Stuff Pseudo Elements Can Do</a></li>
+	<li><a href="http://caniuse.com/css-gencontent" target="_blank">When can I use CSS Generated content?</a></li>
+	<li><strong>Screen Reader Edit:</strong> <a href="http://www.456bereastreet.com/archive/201205/css_generated_content_and_screen_readers/" target="_blank">CSS generated content and screen readers</a></li>
+</ul>
+<h2>For IE7 &amp; those poor saps using IE6</h2>
+<p>We can just use a jQuery (or just Javascript) polyfill to faux generate this content, as these browsers don&rsquo;t understand these pseudo elements. For example:</p>
+<pre>
+$(function(){
+  var elements = $('#closest_id_to_elements').find('elements');
+  <span>// find all elements that match</span>
+  elements.after('&lt;div class="some-name"&gt;&lt;/div&gt;');
+  <span>// add a new div after these &amp; style them
+  // if you want to add in data-* info, that's party simple too</span>
+  elements.after('&lt;div class="some-name"&gt;'$(this).data('whatevs');'&lt;/div&gt;');
+});
+</pre>
+<h2>As an aside: I started out by saying what was &amp; wasn&rsquo;t possible</h2>
+<p>Technically, anything is pretty much possible with generated content. Some <a href="http://css-tricks.com/transitions-and-animations-on-css-generated-content/" target="_blank">animations and other crazy CSS3ness</a> might not be greatly supported yet, but I suspect that will change. However, I was referring more to the content itself, and not what can be done with it. As I&rsquo;ve referenced Spiderman before, with great power comes great responsibility. <strong>So, yes, you can add in almost any kind of content</strong> with these techniques, but as usual, always keep the user in mind. If the information is critical for your business or for general SEO purposes, don&rsquo;t do it. If it&rsquo;s just glitter on the icing on the cake, then by all means, have at it.</p>
+		<a href="/thoughts" class="button" data-icon="✈">Back to Thoughts</a>
+	</article>
+</div>
+	</div>
+	<footer id="menu">
+		<h3 data-icon="☰">Navigation</h3>
+		<ul>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/thoughts">Thoughts</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="">Resume</a></li>
+			<li><a href="http://twitter.com/jefffis">Twitter</a></li>
+			<li><a href="/" data-icon="↟">Home</a></li>
+		</ul>
+		<hr data-icon="☂" />
+		<div>
+			<p><strong>Jeff Doan</strong> is a web designer/front-end tinkerer living and working in good ol&rsquo; Arlington, VA.</p>
+			<h4>&copy; 20-something&mdash;2012; built with jekyll, lots of UNICODE-ness and some other trickery.</h4>
+			<p>Reading Now: <a href="http://www.amazon.com/The-Twelve-Book-Passage-Trilogy/dp/0345504984" target="_blank">The Twelve</a>,<br />just finished <a href="http://www.amazon.com/The-Prague-Cemetery-Umberto-Eco/dp/0547577532" target="_blank">The Prague Cemetery</a>.</p>
+		</div>
+	</footer>
+	<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/javascripts/app.js"></script>-->
+</body>
+</html>

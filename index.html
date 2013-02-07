@@ -3,24 +3,26 @@ layout: default
 ---
 <figure>
 	<a href="">
-		<h1>Featured Project Name</h1>
-	</a>
-</figure>
-<figure>
-	<a href="">
-		<h1>Featured Project Name</h1>
-	</a>
-</figure>
-<figure>
-	<a href="">
-		<h1>Featured Project Name</h1>
+		<h1><span>Dailytidbit</span></h1>
+		<img src="/images/dailytidbit.jpeg" />
 	</a>
 </figure>
 <div class="sub">
+	<ul class="sub pad">
+		{% for post in site.categories.work limit:1 %}
+		<li><a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
 	<h2>Recent Thoughts</h2>
 	<ul class="sub">
-	  {% for post in site.categories.thought %}
-	  <li><a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a></li>
-	  {% endfor %}
+		{% for post in site.categories.thought limit:5 %}
+		<li>
+			{% if post.external_link %}
+			<a href="{{ post.external_link }}" class="alt" data-icon="⚡">{{ post.title }}</a>
+			{% else %}
+			<a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a>
+			{% endif %}
+		</li>
+		{% endfor %}
 	</ul>
 </div>
