@@ -27,7 +27,7 @@ html {
 	background:#efefef;
 	position:relative;
 	letter-spacing:normal;
-	border:2px solid #0BAADB;
+	/*border:2px solid #0BAADB;*/
 	text-shadow:0 1px 0 rgba(255,255,255,0.5);
 }
 /*html.thoughts {
@@ -69,26 +69,32 @@ a:active {
 	text-decoration:none;
 }
 
-header {
-	background: #0BAADB;
+[role=banner] {
+	/*background: #0BAADB;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0BAADB), to(#109BC6));
 	background: -webkit-linear-gradient(#0BAADB, #109BC6);
 	background: -moz-linear-gradient(#0BAADB, #109BC6);
 	background: -ms-linear-gradient(#0BAADB, #109BC6);
 	background: -o-linear-gradient(#0BAADB, #109BC6);
-	background: linear-gradient(#0BAADB, #109BC6);
-	position:relative;
+	background: linear-gradient(#0BAADB, #109BC6);*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
 	margin:0;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
 }
 header h2 {
-	margin:0;
-	padding:1em 1.15em 1em 1em;
+	margin:.75em .6em;
+	padding:.5em;
 	text-align:right;
-	float:right;
+	float:left;
 	position:relative;
 	z-index:2;
 	letter-spacing:-.04em;
+	/*background:rgba(0,0,0,0.5);*/
+	font-size:125%;
 }
 /*header h2:after {
 	content:attr(data-icon);
@@ -101,14 +107,13 @@ header h2 a {
 	color:white;
 }
 header h2 span {
-	font-size:50%;
+	font-size:100%;
 	font-weight:normal;
-	opacity:.65;
-	position:relative;
-	top:-.25em;
+	opacity:.85;
+	position:static;
 }
 header h3 {
-	float:left;
+	float:right;
 	margin:0;
 	position:relative;
 	z-index:2;
@@ -125,15 +130,17 @@ header h3 a {
 	width:2em;
 	position:relative;
 	top:2.75em;
-	left:1em;
+	right:1em;
 }
 header h3:before {
 	content:attr(data-icon);
 	position:absolute;
-	left:.4em;
+	right:.5em;
 	top:.7em;
 	line-height:1;
-	font-size:300%;
+	font-size:200%;
+	/*padding:.15em .25em;
+	background:rgba(0,0,0,0.5);*/
 }
 header .active {
 	color:#040407;
@@ -187,6 +194,12 @@ figure {
 	margin:0;
 	position:relative;
 }
+figure.featured {
+	background:url(http://jefff.co/images/large/dailytidbit.jpg) no-repeat 0 0;
+	background-size:cover;
+	min-height:15em;
+	box-shadow:0 0 5px rgba(0,0,0,0.25) inset, 0 0 25px rgba(0,0,0,0.15) inset;
+}
 figure a {
 	/*background:url(/images/dailytidbit.jpeg) no-repeat 0 0;
 	background-size:cover;*/
@@ -203,6 +216,9 @@ figure a {
 	background:url(http://jefff.co/images/css-mood-board.png) no-repeat 0 0;
 }*/
 
+.work figure {
+	margin:1em 0;
+}
 .works figure a {
 	height:70px;
 	
@@ -250,13 +266,13 @@ figure h1, .inner.thoughts .sub figure h1 {
 	height:auto;
 	width:auto;
 }
-.inner figure h1 {
+figure h1 {
 	text-align:center;
 	background:none;
 	width:100%;
 	padding:0;
 }
-.inner figure h1 span {
+figure h1 span {
 	/*background:#7bc9b6;*/
 	background:#0BAADB;
 	line-height:1;
@@ -272,20 +288,24 @@ figure h1, .inner.thoughts .sub figure h1 {
 }
 [role=main] header {
 	display:table;
-	background:url(/images/instagram.jpg) no-repeat center center;
+	background:url(http://jefff.co/images/bean.jpg) no-repeat 0 20%;
+	/*background-image:url(http://distillery.s3.amazonaws.com/media/2011/04/25/bfe21e4e56164924833872028da937fc_7.jpg);*/
 	background-size:cover;
 	height:15em;
-	margin:0 0 1.5em;
+	margin:0;
 	width:100%;
 	box-shadow:0 0 5px rgba(0,0,0,0.25) inset, 0 0 25px rgba(0,0,0,0.15) inset;
+}
+[role=main] header.none {
+	background-image:url(http://jefff.co/images/indierock-o.jpg);
 }
 [role=main] header h1 {
 	position:static;
 	display:table-cell;
 	height:100%;
-	vertical-align:middle;
+	vertical-align:bottom;
 	font-size:200%;
-	padding:0 1em;
+	padding:0 1em 1em;
 	color:white;
 	text-align:center;
 	text-shadow:0 1px 0 rgba(0,0,0,0.3), 0 2px 1px rgba(0,0,0,0.2), 0 3px 2px rgba(0,0,0,0.15);
@@ -294,8 +314,14 @@ figure h1, .inner.thoughts .sub figure h1 {
 	max-width:auto;
 	margin:0 auto;
 }
+.work figure img {
+	
+}
 
 [role=main] {
+	padding:0 0 3em;
+}
+.inner [role=main] {
 	padding:0 0 3em;
 }
 
@@ -313,6 +339,15 @@ figure h1, .inner.thoughts .sub figure h1 {
 [role=main] ul.sub.pad {
 	margin-top:3em;
 }
+[role=main] ul.sub.minus {
+	margin-top:-1.5em;
+}
+.sub.minus a:before {
+	font-size:125%;
+}
+.minus + h2 {
+	padding-top:0;
+}
 [role=main] h2 + ul {
 	margin-top:2em;
 }
@@ -328,6 +363,7 @@ li {
 }
 li a {
 	display:block;
+	font-weight:bold;
 	background:#0BAADB;
 	line-height:1;
 	padding:1em 0;
@@ -359,6 +395,17 @@ li a:before {
 	left:-.5em;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
+li a.alt:before {
+	content:none;
+	display:none;
+}
+li a.alt:after {
+	content:attr(data-icon);
+	position:relative;
+	right:-.5em;
+	-webkit-font-smoothing:subpixel-antialiased;
+}
+
 article li a {
 	display:inline;
 	padding:0;
@@ -417,7 +464,7 @@ article img {
 }
 
 footer h3 {
-	border-top:1px solid rgba(0,0,0,0.05);
+	border-top:4px solid rgba(0,0,0,0.075);
 	padding-top:3em;
 	margin:0 .75em 1.5em;
 }
@@ -435,7 +482,7 @@ hr:before {
 	display:block;
 	text-align:center;
 	margin:2em 0;
-	color:#555;
+	color:#777;
 }
 footer div {
 	opacity:.7;
@@ -457,7 +504,7 @@ footer li a:active {
 }
 
 .details {
-	padding:1em 1em 0;
+	padding:1em;
 }
 .details h2:before, article h2:before {
 	content:attr(data-icon);
@@ -497,7 +544,7 @@ small, .pad-bot {
 }
 
 article {
-	padding:1em;
+	padding:6em 1em 1em;
 }
 .thoughts article ol, .thoughts article ul {
 	margin:1em 0;
@@ -516,8 +563,20 @@ article li, .thoughts article h2 {
 }
 
 @media screen and (min-width:30em) {
+	header h2 span {
+		font-size:50%;
+		position:relative;
+		top:-.25em;
+	}
 	header h3 {
 		font-size:1.25em;
+	}
+	header h3:before {
+		padding:.1em .25em;
+	}
+	header h2 {
+		margin:.75em;
+		font-size:150%;
 	}
 	header h3:before {
 		top:.3em;
@@ -538,7 +597,7 @@ article li, .thoughts article h2 {
 		padding:0 0 2em;
 	}
 	.details {
-		padding:1em 0 0;
+		padding:1em 0;
 	}
 	.inner.thoughts figure h1 {
 		padding:0 2em;
@@ -548,9 +607,6 @@ article li, .thoughts article h2 {
 		position:absolute;
 		top:-.1em;
 		left:-1em;
-	}
-	[role=main] header h1 {
-		font-size:300%;
 	}
 }
 @media screen and (min-width:50em) {
@@ -569,5 +625,8 @@ article li, .thoughts article h2 {
 	}
 	.details p {
 		padding:0 10em;
+	}
+	[role=main] header h1 {
+		font-size:300%;
 	}
 }

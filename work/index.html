@@ -3,10 +3,16 @@ layout: default
 title: Work
 ---
 <header>
-  <h1>Recent Work</h1>
+	<h1>Recent Work</h1>
 </header>
-<ul class="sub">
-  {% for post in site.categories.work %}
-  <li><a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a></li>
-  {% endfor %}
+<ul class="sub pad">
+{% for post in site.categories.work %}
+<li>
+	{% if post.external_link %}
+	<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
+	{% else %}
+	<a href="{{ post.url }}" data-icon="⚒">{{ post.title }}</a>
+	{% endif %}
+</li>
+{% endfor %}
 </ul>

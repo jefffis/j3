@@ -10,4 +10,18 @@ layout: default
 		{{ content }}
 		<a href="/thoughts" class="button" data-icon="⇤">Back to Thoughts</a>
 	</article>
+	<div class="sub">
+		<h2>Related Work/Thoughts</h2>
+		<ul>
+		{% for post in site.related_posts %}
+			<li>
+			{% if post.external_link %}
+			<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
+			{% else %}
+			<a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a>
+			{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
 </div>
