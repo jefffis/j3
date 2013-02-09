@@ -1,0 +1,97 @@
+<html>
+<body>
+	<head>
+		<title>Dumbed-down Content-aware CSS Demo</title>
+		<link rel="author" href="/humans.txt" />
+		<style type="text/css">
+		* {
+			padding:0;
+			margin:0;
+			font-family:sans-serif;
+			line-height:1.5;
+		}
+		body {
+			padding:50px 50px 500px;
+			text-align:center;
+			width:500px;
+			margin:0 auto;
+		}
+		h1 {
+			font-size:40px;
+			text-transform:uppercase;
+		}
+		h1:after {
+			content:"Wowzers!";
+			display:block; /* optional depending on what you want to do with this */
+			color:blue;
+			font-size:40%;
+			text-transform:none;
+			padding:10px 0 40px;
+			opacity:.5;
+		}
+		p {
+			text-align:left;
+		}
+		.sample:after {
+			content:attr(data-info);
+			display:block;
+			margin:40px 0;
+			font-weight:bold;
+			text-align:right;
+			opacity:.5;
+		}
+		article {
+			margin:0 0 50px;
+		}
+		hr {
+			border:0;
+			background:#ccc;
+			height:1px;
+			margin:40px 0;
+		}
+		.reused-design:after {
+			content:url(facebook-icon.png);
+			display:block;
+			height:50px;
+			width:50px;
+			margin:10px auto;
+		}
+		.samp:after {
+			content:attr(data-color);
+			display:block;
+			font-size:11px;
+		}
+		
+		@media print {
+			a:after {
+				content:attr(href);
+				font-size:10pt; /* for easy reading */
+			}
+		}
+	
+		</style>
+		
+		<script type="text/javascript">
+	
+		/*var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22790184-1']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' :'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();*/
+	
+		</script>
+	</head>
+	<header>
+		<nav>
+			
+		</nav>
+	</header>
+	<h1>This be a headline.</h1>
+	<p>Iphone tofu mcsweeney's, next level readymade wayfarers authentic gluten-free wes anderson swag helvetica gastropub gentrify lo-fi. Bicycle rights fingerstache pork belly mcsweeney's. Irony pinterest tumblr ethical, authentic cray ethnic typewriter aesthetic high life photo booth Austin bicycle rights skateboard marfa. Retro raw denim synth, street art gentrify high life cardigan leggings. DIY photo booth pinterest skateboard lo-fi fanny pack. Aesthetic shoreditch beard pop-up artisan, next level etsy 8-bit mcsweeney's pork belly umami. Wes anderson skateboard before they sold out typewriter etsy twee aesthetic, street art mlkshk ethical fap scenester.</p>
+	
+</body>
+</html>
