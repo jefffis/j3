@@ -1,6 +1,6 @@
 ---
 layout: works_entry
-title: Contact Solutions Landing Pages
+title: CSI Landing Pages
 image: http://jefff.co/images/large/hosted-ivr-landing-page.jpg
 categories: [work]
 ---
@@ -11,4 +11,4 @@ Contact Solutions needed a simple landing page that also engaged users in what t
 
 As an aside, designed and implemented in 2011, this was one of the first sites I know of to **use Proxima Nova**.
 
-<a href="http://contactsolutions.com/hosted-ivr/" class="button" data-icon="✈">Coming Soon</a>
+<a href="http://contactsolutions.com/hosted-ivr/" class="button" data-icon="✈">View Project</a>
