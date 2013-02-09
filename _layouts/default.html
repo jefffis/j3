@@ -1,12 +1,15 @@
 <!doctype html>
-{% if page.url != '/index.html' %}<html lang="en-us" class="inner{% if page.url == '/work/*' %} thoughts{% endif %}">{% else %}<html lang="en-us" class="home">{% endif %}
+<html lang="en-us" class="{% if page.url == '/resume/index.html' %}inner resume{% else if page.url != '/index.html' %}inner{% else %}home{% endif %}">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-	<title dir="ltr">{% if page.title %} {{ page.title }} | {% endif %} Jefff.co</title>
-	<meta name="description" content="" />
+	<title dir="ltr">{% if page.url == '/index.html' %}Jefff | Web Designer and Front-end Tinkerer. Music Snob. Husband. Nerd.{% else %}{% if page.title %}{{ page.title }} by{% endif %} Jefff{% endif %}</title>
+	<meta name="description" content="The web sandbox of Jefff Doan; my work, my musings on web design, email design, and other web-related thingamajigs." />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://jefff.co//images/favicon.ico" />
+	<link rel="author" href="http://jefff.co//humans.txt" />
 	
 	<link href='http://fonts.googleapis.com/css?family=Domine:400,700|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
 	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
@@ -31,7 +34,7 @@
 			<li><a href="/work">Recent work</a></li>
 			<li><a href="/thoughts">Recent thoughts</a></li>
 			<li><a href="/about">More about Jefff</a></li>
-			<li><a href="">Check my résumé</a></li>
+			<!--<li><a href="/resume">Check my résumé</a></li>-->
 			<li><a href="http://twitter.com/jefffis">Follow me on twitter</a></li>
 			<li><a href="/" data-icon="↻">Back home</a></li>
 		</ul>
@@ -40,7 +43,7 @@
 			<h4>Jeff Doan is a web designer/front-end tinkerer living and working in good ol&rsquo; Arlington, VA.</h4>
 			<h4>&copy; 20-something&mdash;{{ site.time | date: "%Y" }}</h4>
 			<h4>Built with jekyll, markdown, minimal images, no JavaScript (except for Analytics), and lots of UNICODE-ness.</h4>
-			<p>Reading Now: <a href="http://www.amazon.com/The-Twelve-Book-Passage-Trilogy/dp/0345504984" target="_blank">The Twelve</a>,<br />just finished <a href="http://www.amazon.com/The-Prague-Cemetery-Umberto-Eco/dp/0547577532" target="_blank">The Prague Cemetery</a>.</p>
+			<p>Reading Now: <a href="http://www.amazon.com/The-Twelve-Book-Passage-Trilogy/dp/0345504984">The Twelve</a>,<br />just finished <a href="http://www.amazon.com/The-Prague-Cemetery-Umberto-Eco/dp/0547577532">The Prague Cemetery</a>.</p>
 		</div>
 	</footer>
 	<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>

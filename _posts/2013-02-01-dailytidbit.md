@@ -1,7 +1,7 @@
 ---
 layout: works_entry
 title: Dailytidbit
-image: /images/dailytidbit.jpeg
+image: http://jefff.co/images/large/dailytidbit.jpg
 categories: [work]
 ---
 
@@ -9,4 +9,4 @@ categories: [work]
 
 The best, or sexiset, way to learn a new word each day. Learn a new word each day. curated & hand-picked goodness emailed to your inbox daily.
 
-<a href="" class="button" data-icon="✈">View project</a>
+<a href="http://dailytidb.it" class="button" data-icon="✈">View project</a>

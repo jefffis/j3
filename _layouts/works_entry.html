@@ -19,6 +19,7 @@ layout: default
 	{% else %}
 	{{ content }}
 	{% endif %}
+	{% if site.related_posts %}
 	<div class="sub">
 		<h2>Related Work/Thoughts</h2>
 		<ul>
@@ -33,4 +34,5 @@ layout: default
 		{% endfor %}
 		</ul>
 	</div>
+	{% endif %}
 </div>

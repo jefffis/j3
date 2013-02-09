@@ -20,7 +20,7 @@ html {
 	height:auto;
 	min-height:100%;
 	width:100%;
-	font:100%/1.5 'Arimo', 'Helvetica Neue', Arial, sans-serif;;
+	font:100%/1.5 'Arimo', 'Helvetica Neue', Arial, sans-serif;
 	overflow:auto;
 	line-height:1.5;
 	color:#666;
@@ -30,9 +30,11 @@ html {
 	/*border:2px solid #0BAADB;*/
 	text-shadow:0 1px 0 rgba(255,255,255,0.5);
 }
-/*html.thoughts {
-	background:#efefef;
-}*/
+html.resume {
+	background:#272822;
+	color:white;
+	text-shadow:0 1px 0 rgba(0,0,0,0.5);
+}
 body {
 	width:100%;
 	height:100%;
@@ -105,6 +107,9 @@ header h2 {
 }*/
 header h2 a {
 	color:white;
+}
+header h2:active {
+	opacity:.6;
 }
 header h2 span {
 	font-size:100%;
@@ -299,6 +304,12 @@ figure h1 span {
 [role=main] header.none {
 	background-image:url(http://jefff.co/images/indierock-o.jpg);
 }
+[role=main] header.about {
+	background-image:url(http://jefff.co/images/the-minnow.jpg);
+}
+[role=main] header.resume {
+	background-image:url(http://jefff.co/images/brawler.jpg);
+}
 [role=main] header h1 {
 	position:static;
 	display:table-cell;
@@ -462,6 +473,9 @@ article img {
 	background:#037699;
 	padding:.6em .5em .4em;
 }
+.button.disabled {
+	background:rgba(0,0,0,0.2);
+}
 
 footer h3 {
 	border-top:4px solid rgba(0,0,0,0.075);
@@ -520,6 +534,71 @@ footer li a:active {
 }
 .details.c * {
 	text-align:center;
+}
+.resume footer, .resume header h1, .resume header h3 {
+	display:none;
+}
+.resume header.resume {
+	background:red;
+	box-shadow:none;
+	min-height:auto;
+	height:auto;
+}
+.details.r * {
+	text-align:left;
+	font-family:Consolas, Inconsolata, Monaco, monospace;
+}
+.details.r h3, .details.r h3 strong {
+	font-size:100%;
+	margin:-.5em 0 1em;
+	color:#75715e;
+	font-family:'Arimo', 'Helvetica Neue', Arial, sans-serif;
+}
+.r h2 + h3:before {
+	content:"// ";
+}
+.r h2 + h3 strong {
+	float:right;
+}
+.r h2 {
+	color:#a6e22d;
+}
+.r ul:before, .r ul:after {
+	content:"\007B";
+	display:inline-block;
+	position:relative;
+	top:0;
+	left:-1em;
+	color:white;
+}
+.r ul {
+	padding:0 0 0 1em;
+}
+.r ul:after {
+	content:"\007D";
+}
+.r li {
+	color:#66d9ef;
+	margin-bottom:1em;
+	line-height:1.35;
+	font-size:90%;
+}
+.r li:last-child {
+	margin-bottom:0;
+}
+.r li:after {
+	content:",";
+	display:inline;
+	position:relative;
+	left:-..025em;
+}
+.r li:last-child:after {
+	content:""
+}
+.r li em, .r li strong {
+	font-style:normal;
+	font-weight:normal;
+	color:#f92772;
 }
 article h2 {
 	position:relative;
@@ -608,6 +687,10 @@ article li, .thoughts article h2 {
 		top:-.1em;
 		left:-1em;
 	}
+	.details.r {
+		float:left;
+		padding-left:1.9em;
+	}
 }
 @media screen and (min-width:50em) {
 	figure a {
@@ -628,5 +711,18 @@ article li, .thoughts article h2 {
 	}
 	[role=main] header h1 {
 		font-size:300%;
+	}
+}
+@media screen and (min-width:60em){
+	.resume header h2 {
+		position:fixed;
+	}
+	.details.r {
+		float:right;
+		padding-left:0;
+		padding-right:1.9em;
+	}
+	.details.r > h2 {
+
 	}
 }
