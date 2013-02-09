@@ -301,11 +301,11 @@ figure h1 span {
 	width:100%;
 	box-shadow:0 0 5px rgba(0,0,0,0.25) inset, 0 0 25px rgba(0,0,0,0.15) inset;
 }
-[role=main] header.none {
+[role=main] header.work {
 	background-image:url(http://jefff.co/images/indierock-o.jpg);
 }
 [role=main] header.about {
-	background-image:url(http://jefff.co/images/the-minnow.jpg);
+	background-image:url(http://jefff.co/images/bonfire.jpg);
 }
 [role=main] header.resume {
 	background-image:url(http://jefff.co/images/brawler.jpg);

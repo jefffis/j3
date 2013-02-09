@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header class="none">
+<header class="work">
 	<h1>{{ page.title }}</h1>
 
 	{{ current_post.work_next }}
@@ -19,8 +19,8 @@ layout: default
 	{% else %}
 	{{ content }}
 	{% endif %}
-	{% if site.related_posts %}
-	<div class="sub">
+	<a href="/work" class="button" data-icon="⇤">Back to Work</a>
+	<!--<div class="sub">
 		<h2>Related Work/Thoughts</h2>
 		<ul>
 		{% for post in site.related_posts %}
@@ -33,6 +33,5 @@ layout: default
 			</li>
 		{% endfor %}
 		</ul>
-	</div>
-	{% endif %}
+	</div>-->
 </div>
