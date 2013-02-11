@@ -142,7 +142,7 @@ header h3:before {
 	content:attr(data-icon);
 	position:absolute;
 	right:.5em;
-	top:.5em;
+	top:.6em;
 	line-height:1;
 	font-size:200%;
 	/*padding:.15em .25em;
