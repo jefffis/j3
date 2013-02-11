@@ -57,6 +57,7 @@ h1, h2, h3, h4, p {
 
 a {
 	color:#0BAADB;
+	font-weight:bold;
 	-webkit-transition:.2s all ease-out;
 	-moz-transition:.2s all ease-out;
 	transition:.2s all ease-out;
@@ -134,14 +135,14 @@ header h3 a {
 	height:2em;
 	width:2em;
 	position:relative;
-	top:2.75em;
+	top:.5em;
 	right:1em;
 }
 header h3:before {
 	content:attr(data-icon);
 	position:absolute;
 	right:.5em;
-	top:.7em;
+	top:.5em;
 	line-height:1;
 	font-size:200%;
 	/*padding:.15em .25em;
@@ -394,8 +395,8 @@ li a.alt:hover {
 }
 li a:active {
 	background:#037699;
-	padding-top:1.05em;
-	padding-bottom:.95em;
+	/*padding-top:1.05em;
+	padding-bottom:.95em;*/
 }
 li a.alt:active {
 	background:#248069;
@@ -474,10 +475,11 @@ article img {
 }
 .button:active, .view-more:active {
 	background:#037699;
-	padding:.6em .5em .4em;
+	/*padding:.6em .5em .4em;*/
 }
 .button.disabled {
 	background:rgba(0,0,0,0.2);
+	font-weight:bold;
 }
 
 footer h3 {
@@ -655,17 +657,13 @@ article li, .thoughts article h2 {
 	}
 	header h3:before {
 		padding:.1em .25em;
+		top:.3em;
 	}
 	header h2 {
 		margin:.75em;
 		font-size:150%;
 	}
-	header h3:before {
-		top:.3em;
-	}
-	header h3 a {
-		top:1.5em;
-	}
+	
 	figure a {
 		min-height:25em;
 	}
