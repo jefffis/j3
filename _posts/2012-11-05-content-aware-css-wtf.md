@@ -12,7 +12,7 @@ However, media queries are still lacking in that they are only really testing fo
 
 ##Is there anything we can do for this?
 
-HTML5, meta content, and microdata are all the rage now, and for good reason. There purpose is to help make web content more meaningful to search engines and web browsers. And by helping search engines and web browsers to understand the content more, then [theoretically] search engines and web browsers can provide more useful responses to user queries or interactions. So, what can we do for our good friend CSS?
+HTML5, meta content, and microdata are all the rage now, and for good reason. There purpose is to help make web content more meaningful to search engines and web browsers. And by helping search engines and web browsers to understand the content more, then theoretically search engines and web browsers can provide more useful responses to user queries or interactions. So, what can we do for our good friend CSS?
 
 Can we use server-side code to help add cues to our HTML that our CSS can pick up on? I can’t tell you how many times clients have designed something that is dependent on how much content or how many items are contained within a particular element. And, when I tell them that it’s usually not feasible to make these containers respond to the amount of content inside, it’s usually a bit of an effort to explain this to them. And it’s not their fault, if I were just casual web user, I would also not understand why something like this isn’t just built in. Is there a way around this? We can certainly write some JavaScript to help us out, but that would just be a bit heavy-handed in my opinion.
 

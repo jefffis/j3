@@ -9,9 +9,9 @@ title: Thoughts
 	{% for post in site.categories.thought %}
 	<li>
 		{% if post.external_link %}
-		<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
+		<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }} <span>{{post.date | date: "%b %Y"}}</span></a>
 		{% else %}
-		<a href="{{ post.url }}" data-icon="⚡">{{ post.title }}</a>
+		<a href="{{ post.url }}" data-icon="⚡">{{ post.title }} <span>{{post.date | date: "%b %Y"}}</span></a>
 		{% endif %}
 	</li>
 	{% endfor %}
