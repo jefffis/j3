@@ -647,11 +647,11 @@ article li, .thoughts article h2 {
 }
 
 @media screen and (min-width:30em) {
-	header h2 span {
+	/*header h2 span {
 		font-size:50%;
 		position:relative;
 		top:-.25em;
-	}
+	}*/
 	header h3 {
 		font-size:1.25em;
 	}
