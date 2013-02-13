@@ -1,6 +1,6 @@
 ---
 layout: works_entry
-title: CSI Landing Pages
+title: CSI Landing Page
 image: http://jefff.co/images/large/hosted-ivr-landing-page.jpg
 categories: [work]
 ---

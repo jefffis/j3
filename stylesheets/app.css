@@ -388,8 +388,8 @@ li a span {
 	font-size:70%;
 	text-transform:uppercase;
 	opacity:.75;
-	display:inline-block;
 	padding:0 0 0 .5em;
+	display:none;
 }
 li a.alt {
 	background:#7bc9b6;
@@ -566,6 +566,9 @@ footer li a:active {
 	color:#75715e;
 	font-family:'Arimo', 'Helvetica Neue', Arial, sans-serif;
 }
+.details.r h3 strong {
+	margin:0;
+}
 .r h2 + h3:before {
 	content:"// ";
 }
@@ -698,6 +701,9 @@ article li, .thoughts article h2 {
 	.details.r {
 		float:left;
 		padding-left:1.9em;
+	}
+	li a span {
+		display:inline-block;
 	}
 }
 @media screen and (min-width:50em) {
