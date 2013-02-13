@@ -12,6 +12,7 @@
 	<link rel="author" href="http://jefff.co//humans.txt" />
 	
 	<link href='http://fonts.googleapis.com/css?family=Domine:400,700|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	{% if page.url != '/resume/index.html' %}
 	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
 	
 	<script type="text/javascript">
@@ -27,6 +28,9 @@
 	})();
 
 	</script>
+	{% else %}
+	<link href="/stylesheets/app-r.css" rel="stylesheet" type="text/css" />
+	{% endif %}
 </head>
 <body>
 	<header role="banner">
@@ -42,7 +46,7 @@
 			<li><a href="/work">Recent work</a></li>
 			<li><a href="/thoughts">Recent thoughts</a></li>
 			<li><a href="/about">More about Jefff</a></li>
-			<!--<li><a href="/resume">Check my résumé</a></li>-->
+			<li><a href="/resume">Check my résumé</a></li>
 			<li><a href="http://twitter.com/jefffis">Follow me on twitter</a></li>
 			<li><a href="mailto:iam@jefff.co">Gimme a shout</a></li>
 			<li><a href="/" data-icon="↻">Back home</a></li>
