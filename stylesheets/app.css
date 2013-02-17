@@ -144,7 +144,7 @@ header h3:before {
 	right:.5em;
 	top:.6em;
 	line-height:1;
-	font-size:200%;
+	font-size:225%;
 	/*padding:.15em .25em;
 	background:rgba(0,0,0,0.5);*/
 }
@@ -211,8 +211,8 @@ figure a {
 	background-size:cover;*/
 	display:block;
 	width:100%;
-	/*min-height:15em;
-	padding:3em;
+	min-height:15em;
+	/*padding:3em;
 	-webkit-transition:.2s all ease-out;
 	-moz-transition:.2s all ease-out;
 	transition:.2s all ease-out;*/
@@ -304,6 +304,13 @@ figure h1 span {
 }
 [role=main] header.work {
 	background-image:url(http://jefff.co/images/indierock-o.jpg);
+}
+[role=main] header.work.i {
+	background-image:url(http://jefff.co/images/code.png);
+	background-position:20px 0;
+	background-color:#272822;
+	background-size:150%;
+	/*-webkit-filter:sepia(0.5) saturate(0.5);*/
 }
 [role=main] header.about {
 	background-image:url(http://jefff.co/images/bonfire.jpg);

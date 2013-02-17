@@ -14,6 +14,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Domine:400,700|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
 	{% if page.url != '/resume/index.html' %}
 	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
+	{% else %}
+	<link href="/stylesheets/app-r.css" rel="stylesheet" type="text/css" />
+	{% endif %}
 	
 	<script type="text/javascript">
 
@@ -28,9 +31,7 @@
 	})();
 
 	</script>
-	{% else %}
-	<link href="/stylesheets/app-r.css" rel="stylesheet" type="text/css" />
-	{% endif %}
+
 </head>
 <body>
 	<header role="banner">
