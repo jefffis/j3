@@ -306,10 +306,10 @@ figure h1 span {
 	background-image:url(http://jefff.co/images/indierock-o.jpg);
 }
 [role=main] header.work.i {
-	background-image:url(http://jefff.co/images/code.png);
+	background-image:url(http://jefff.co/images/code-s.png);
 	background-position:20px 0;
 	background-color:#272822;
-	background-size:150%;
+	background-size:auto;
 	/*-webkit-filter:sepia(0.5) saturate(0.5);*/
 }
 [role=main] header.about {
@@ -471,6 +471,9 @@ article img {
 	text-align:center;
 	text-decoration:none;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1);
+}
+.button {
+	width:auto;
 }
 .ex {
 	padding:0 1em;
@@ -746,4 +749,9 @@ article li, .thoughts article h2 {
 	.details.r > h2 {
 
 	}
+}
+
+.button.prose {
+	width:auto;
+	max-width:25em;
 }
