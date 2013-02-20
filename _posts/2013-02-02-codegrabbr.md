@@ -9,4 +9,4 @@ categories: [work]
 
 Need an HTML character, but don't know the actual code? No problem, just search for what type of character you need, and this spits out whatever is closest. Plus, it's got Unicode as well, in case you want that too.
 
-<span class="button disabled" data-icon="✈">Coming Soon</span>
+<a href="http://codegrabbr.jefff.co/" class="button" data-icon="✈">Dev&rsquo;ing</a>
