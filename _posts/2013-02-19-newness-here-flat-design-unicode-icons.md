@@ -1,6 +1,6 @@
 ---
 layout: thoughts_entry
-title: Jekyll, Flat Design & Unicode Icons
+title: Jekyll, Flat Design & Unicode
 categories: [thought]
 ---
 
