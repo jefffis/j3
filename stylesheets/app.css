@@ -126,6 +126,9 @@ header h3 {
 	color:white;
 	cursor:pointer;
 	font-size:.85em;
+	position:relative;
+	top:1.5em;
+	right:.5em;
 }
 header h3:active {
 	opacity:.75;
@@ -134,20 +137,24 @@ header h3 a {
 	display:block;
 	height:2em;
 	width:2em;
-	position:relative;
+	/*position:relative;
 	top:.5em;
-	right:1em;
+	right:1em;*/
 }
-header h3:before {
+header img {
+	 height:30px;
+	 width:30px;
+}
+/*header h3:before {
 	content:attr(data-icon);
 	position:absolute;
 	right:.5em;
 	top:.6em;
 	line-height:1;
 	font-size:225%;
-	/*padding:.15em .25em;
-	background:rgba(0,0,0,0.5);*/
-}
+	padding:.15em .25em;
+	background:rgba(0,0,0,0.5);
+}*/
 header .active {
 	color:#040407;
 }
