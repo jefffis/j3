@@ -670,12 +670,11 @@ article h2.h a {
 	font-size:40%;
 }
 article .h span {
-	float:right;
 	font-size:50%;
 	font-weight:normal;
 	opacity:.5;
-	position:relative;
-	top:.5em;
+	display:block;
+	padding:.5em 0 0;
 }
 article h2:before {
 	display:block;
@@ -689,7 +688,7 @@ small, .pad-bot {
 }
 
 article {
-	padding:6em 1em 1em;
+	padding:1em;
 }
 .thoughts article ol, .thoughts article ul {
 	margin:1em 0;
@@ -743,6 +742,9 @@ article li, .thoughts article h2 {
 	.inner.thoughts figure h1 {
 		padding:0 2em;
 	}
+	article {
+		padding:3em 1em 1em;
+	}
 	article h2:before {
 		display:inline-block;
 		position:absolute;
@@ -757,8 +759,12 @@ article li, .thoughts article h2 {
 		display:inline-block;
 	}
 	article .h span {
+		float:right;
+		font-size:50%;
+		font-weight:normal;
+		opacity:.5;
 		position:absolute;
-		top:.5em;
+		top:.1em;
 		right:0;
 	}
 }
@@ -784,6 +790,9 @@ article li, .thoughts article h2 {
 	}
 	[role=main] header h1 {
 		font-size:300%;
+	}
+	article {
+		padding:6em 1em 1em;
 	}
 }
 @media screen and (min-width:60em){
