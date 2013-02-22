@@ -128,7 +128,7 @@ header h3 {
 	font-size:.85em;
 	position:relative;
 	top:1.5em;
-	right:.5em;
+	right:1em;
 }
 header h3:active {
 	opacity:.75;
@@ -556,6 +556,11 @@ footer li a:active {
 	padding:0 0 .5em;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
+.details h3 {
+	text-transform:uppercase;
+	border-top:2px solid #ccc;
+	padding-top:1em;
+}
 .details .middle {
 	display:block;
 	margin:0 auto;
@@ -563,6 +568,26 @@ footer li a:active {
 }
 .details.c * {
 	text-align:center;
+}
+.details.c .non {
+}
+.details.c .non li {
+	text-align:left;
+	padding:0 0 0 1em;
+	margin:0 0 1em;
+	border-left:.5em solid #ccc;
+}
+.work .details li {
+	text-align:left;
+	padding:0 0 0 1em;
+	margin:0 0 1em;
+	border-left:.5em solid #ccc;
+}
+.details.c .non li:after, .work .details li:after {
+	content:",";
+}
+.details.c .non li:last-child:after, .work .details li:last-child:after {
+	content:"";
 }
 .resume footer, .resume header h1, .resume header h3 {
 	display:none;
@@ -737,8 +762,11 @@ article li, .thoughts article h2 {
 	.details {
 		width:45em;
 	}
-	.details p {
+	.details p, .details ul {
 		padding:0 10em;
+	}
+	.details h3 {
+		padding:1.5em 6.5em 0;
 	}
 	[role=main] header h1 {
 		font-size:300%;
