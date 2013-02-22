@@ -5,15 +5,24 @@ title: Work
 <header class="work">
 	<h1>Recent Work</h1>
 </header>
+<h2>Client Work / Projects</h2>
 <ul class="sub pad">
 {% for post in site.categories.work %}
 <li>
-	{% if post.external_link %}
-	<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
-	{% else %}
+	{% if post.external_link %}{% else %}
 	<a href="{{ post.url }}" data-icon="⚒">{{ post.title }}</a>
 	{% endif %}
 </li>
 {% endfor %}
 <li>&hellip;more to come</li>
+</ul>
+<h2>Tests / Misc</h2>
+<ul class="sub pad">
+{% for post in site.categories.work %}
+<li>
+	{% if post.external_link %}
+	<a href="{{ post.external_link }}" class="alt" data-icon="⇗">{{ post.title }}</a>
+	{% else %}{% endif %}
+</li>
+{% endfor %}
 </ul>

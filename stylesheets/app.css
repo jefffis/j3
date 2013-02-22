@@ -660,6 +660,10 @@ footer li a:active {
 article h2 {
 	position:relative;
 }
+article h2.h a {
+	display:none;
+	font-size:40%;
+}
 article .h span {
 	float:right;
 	font-size:60%;
@@ -783,6 +787,25 @@ article li, .thoughts article h2 {
 	}
 	.details.r > h2 {
 
+	}
+}
+@media screen and (min-width:80em){
+	article {
+		position:relative;
+	}
+	article h2.h {
+		position:absolute;
+		margin:1em;
+		right:-8em;
+		float:right;
+		margin:0;
+	}
+	article h2.h a {
+		display:block;
+		padding:.5em 0 0;
+	}
+	article h2.h + p {
+		margin-top:0;
 	}
 }
 

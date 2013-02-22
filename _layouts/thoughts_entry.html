@@ -6,7 +6,9 @@ layout: default
 		<h1>{{page.title}}</h1>
 	</header>
 	<article>
-		<h2 class="h" data-icon="⚒">{{page.date | date: "%b %d %Y"}}</h2>
+		<h2 class="h" data-icon="⚒">{{page.date | date: "%b %d %Y"}}
+			<a href="/thoughts">back to thoughts</a>
+		</h2>
 		{{ content }}
 		<a href="/thoughts" class="button prose" data-icon="⇤">Back to Thoughts</a>
 	</article>
