@@ -7,6 +7,7 @@ layout: default
 	</header>
 	<article>
 		<h2 class="h" data-icon="⚒">{{page.date | date: "%b %d %Y"}}
+			{% if page.tagged %}<span>tagged as {{ page.tagged }}</span>{% endif %}
 			<a href="/thoughts">back to thoughts</a>
 		</h2>
 		{{ content }}

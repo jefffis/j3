@@ -2,6 +2,7 @@
 layout: thoughts_entry
 title: Iterate, and Iterate Often
 categories: [thought]
+tagged: design
 ---
 
 This is something I don't do often enough for sure. Some of this is **laziness, but some of it is just budget constraint**. But this is one of the most important parts of creating success; whether you're building a new product or working on a client project.

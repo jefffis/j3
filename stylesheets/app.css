@@ -355,6 +355,11 @@ figure h1 span {
 	padding-top:2em;
 	text-align:center;
 }
+[role=main] h2.n {
+	padding-top:.5em;
+	margin-bottom:0;
+	font-size:150%;
+}
 [role=main] .work h2 {
 	padding-top:0;
 }
@@ -666,11 +671,11 @@ article h2.h a {
 }
 article .h span {
 	float:right;
-	font-size:60%;
+	font-size:50%;
 	font-weight:normal;
 	opacity:.5;
 	position:relative;
-	top:.4em;
+	top:.5em;
 }
 article h2:before {
 	display:block;
@@ -751,6 +756,11 @@ article li, .thoughts article h2 {
 	li a span {
 		display:inline-block;
 	}
+	article .h span {
+		position:absolute;
+		top:.5em;
+		right:0;
+	}
 }
 @media screen and (min-width:50em) {
 	figure a {
@@ -806,6 +816,12 @@ article li, .thoughts article h2 {
 	}
 	article h2.h + p {
 		margin-top:0;
+	}
+	article .h span {
+		display:block;
+		position:static;
+		padding:.5em 0;
+		float:none;
 	}
 }
 

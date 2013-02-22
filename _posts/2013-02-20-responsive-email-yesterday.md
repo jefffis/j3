@@ -2,6 +2,7 @@
 layout: thoughts_entry
 title: Responsive Email, Yesterday
 categories: [thought]
+tagged: email
 ---
 
 **Everyone knows responsive web design (henceforth RWD).** Well, people in the web industry, and those working closely with web folk; they pretty much all know what that term implies. And they all probably have their own opinions about whether it's good or bad, or at least going in the right direction. But what about responsive email design?

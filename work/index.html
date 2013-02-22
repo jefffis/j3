@@ -5,8 +5,8 @@ title: Work
 <header class="work">
 	<h1>Recent Work</h1>
 </header>
-<h2>Client Work / Projects</h2>
-<ul class="sub pad">
+<h2 class="n">Client Work / Projects</h2>
+<ul class="sub">
 {% for post in site.categories.work %}
 <li>
 	{% if post.external_link %}{% else %}
@@ -16,8 +16,8 @@ title: Work
 {% endfor %}
 <li>&hellip;more to come</li>
 </ul>
-<h2>Tests / Misc</h2>
-<ul class="sub pad">
+<h2 class="n">Tests / Misc</h2>
+<ul class="sub">
 {% for post in site.categories.work %}
 <li>
 	{% if post.external_link %}

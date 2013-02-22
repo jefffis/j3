@@ -2,6 +2,7 @@
 layout: thoughts_entry
 title: Email's Just Fine
 categories: [thought]
+tagged: email
 ---
 
 Email is not dead. Email is not wrong. **Email is not broken.** Is it awesome to use all the time? No, of course not. But, as a medium, it is fine that is suiting it's purpose fairly well.

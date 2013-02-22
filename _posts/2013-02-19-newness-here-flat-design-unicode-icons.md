@@ -2,6 +2,7 @@
 layout: thoughts_entry
 title: Jekyll, Flat Design & Unicode
 categories: [thought]
+tagged: design
 ---
 
 I recently updated my site to use Jekyll, markdown, and Unicode icons. There are, of course, still some images, but only as necessary. **Portfolio samples and 4 header images to give the site some character.** However, I decided to dump a lot of tiny details in buttons and whatnot in favor of just focussing on content, and speed. The images I do use are pretty well optimized, but being that they are portfolio pieces, there's only so small I was willing to go.
