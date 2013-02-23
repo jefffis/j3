@@ -142,7 +142,7 @@ header h3 a {
 	right:1em;*/
 }
 header img {
-	 height:30px;
+	 height:auto;
 	 width:30px;
 }
 /*header h3:before {
