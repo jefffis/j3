@@ -1,0 +1,30 @@
+---
+layout: thoughts_entry
+title: Client Education Still Lacking
+categories: [thought]
+tagged: process
+---
+
+While working on a recent project, I (re-)discovered the issue of client misunderstandings and perceptions of browsers and rendering. While a lot of people have talked about this, and tweeted about it, and mentioned that this _**is part of what we do**_, it's not where it needs to be yet. I don't what the actual solution is to bridging the gap, but I'll run through some scenarios and how I might handle them.
+
+##Not The Clients Fault, Not Always At Least
+Depending on who the client is, either the direct client, or another agency who is subbing work out to you, then there are obviously different levels of involvement we can have with the end client. And, regardless at the end of the day, the end client is not responsible for knowing the ins and outs of the web; **browsers, OS', front-end and back-end technology, etc**. What they are responsible for is directing us in what they want to get out of the project, then listening to our guidance, and then working with us to most effectively reach the end goal. However, at some point, the client needs to be aware of what can and cannot be done, in terms of **technology, our control,** and **budget**.
+
+##The Technology
+This is obviously a broad term/concept, and there's no way I can ever understand it all, let alone a client. But, what we can do is give them a general overview of the current state of things, and even more specifically by looking at their anaylytics and seeing what their current users are using. A good overview of this (albeit a bit hard to digest) can be [found at CanIUse.com](http://caniuse.com/). This basically lists out the features in the modern front-end world, and what browsers support them, as well as how well they are supported.
+
+Though, as I mentioned, it's hard to digest, and more for developers than anyone else really. So, I think a better approad would be to take the most common issues we see re-occurring in client work, and hammer them home here. I think the most important thing to start with is differntiating between flat comps and real websites/apps. Even when they are most similar (on a Mac in a modern browser), there will still be very noticable differences; **type rendering, type kerning, image rendering, advanced Photoshop (assuming it's a PSD) filters and how they are translated here, alpha-transparency, etc**. The point here is not to discourage pushing design and making great looking sites, but to show clients that, while something is super easy to control in a PSD, it's not always so on the web. Then I would suggest showing them the same thing on a PC, in a modern browser, as well as in Internet Explorer. This will really drive home the reality of how things are translated from flat to live.
+
+We can and also should detail out that there are work arounds for certain things that are not available in older browsers, but that these workarounds also come with a price. We **can** make older IE have rounder corners, but it will slow the page load for these users and since it's a hack, we cannot always predict how it will behave. This is just one example, but the point is, that we should be working with our clients to allow them to make the business decisions that matter, rather than us making them for them.
+
+**As an aside, I think we should be focussing more on analytics from the get go**. What I mean by that is, if we know that a client's audience is mostly PC and mostly IE 8, then we should be designing for this browser first. I'm not saying, we can't push / addin extras during the build process for modern browsers, but this way when we go to live comps, what the client has seen won't be nearly as shocking as most often have been.
+
+##What We Can Control
+There are obviously a lot of things we cannot control -- the browser the user is using, the OS, the version of the OS, the type of internet connection they are on, etc. So, obviously we need to work within a wide range of parameters, why then do we seem to shoot ourselves in the foot from the get go? A lot of times we'll work with middle-clients who do the design, and their designers are not always experienced in web. Something I see most often in this sense, is poor typeface choice. Either the faces used are not web-friendly at all (meaning they have web version to be served), or they are not optimized very well for multiple OS'. This is where we can _**(& should)**_ really step in and make sure the client has tested this on a PC, and in their target audience's browsers. This is not terribly difficult to do, especially if you are using a web font service like [Typekit](http://typekit.com/) or [Fonts.com](http://fonts.com/); and this will help give all parties involved an early and quick look at how the type renders.
+
+We can also control _**what we serve**_ to the end user. We can build in a lot of interactiivity with JavaScript and CSS, but if the target audience is mostly on a PC and using IE7, then it really does not make sense to do so. Or, at least this way when put into production and the client is unhappy with performance in these cases, we have a simple conversation/demonstration to reference and justify why we did what we did, and to show there are limited options we have to control certain things.
+
+##Budgetary Considerations
+And lastly, as with any project, there are budgetary considerations to think of. By heading off these conversations and iterations in the future, we can **try to** save the client time and money; and frustration.
+
+These are all, of course, considerations in everything we do, but by having a few more upfront conversations, and being comfortable saying no or asking why on certain things, we **probably** can save time, money, and most importantly give the client something they love.
