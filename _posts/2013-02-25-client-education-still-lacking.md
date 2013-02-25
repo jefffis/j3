@@ -5,7 +5,7 @@ categories: [thought]
 tagged: process
 ---
 
-While working on a recent project, I (re-)discovered the issue of client misunderstandings and perceptions of browsers and rendering. While a lot of people have talked about this, and tweeted about it, and mentioned that this _**is part of what we do**_, it's not where it needs to be yet. I don't what the actual solution is to bridging the gap, but I'll run through some scenarios and how I might handle them.
+While working on a recent project, I (re-)discovered the issue of client misunderstandings and perceptions of browsers and rendering. While a lot of people have talked about this, and tweeted about it, and mentioned that this _**is part of what we do**_, it's not where it needs to be yet. I don't know what the actual solution is to bridging the gap, but I'll run through some scenarios and how I might handle them.
 
 ##Not The Clients Fault, Not Always At Least
 Depending on who the client is, either the direct client, or another agency who is subbing work out to you, then there are obviously different levels of involvement we can have with the end client. And, regardless at the end of the day, the end client is not responsible for knowing the ins and outs of the web; **browsers, OS', front-end and back-end technology, etc**. What they are responsible for is directing us in what they want to get out of the project, then listening to our guidance, and then working with us to most effectively reach the end goal. However, at some point, the client needs to be aware of what can and cannot be done, in terms of **technology, our control,** and **budget**.
