@@ -13,14 +13,12 @@ So why then does everyone feel the same **about design and more importantly desi
 It's not that the people giving the feedback cannot give constructive feedback, it's that they don't know how to do so. Some of this can be solved through our role as educators in the design/web world, and some of this we'll just have to grin and bear it, at least as best I can tell. _**Perhaps a ’How to work with agencies/designers’ ebook would go a long way for this?**_ Hmmm, interesting.
 
 
-##When Does This Happen?
-**All the time unfortunately.** Anyway, a great example of this in the wild was a recent card sort/user test I was helping our agency run. The client doesn't matter, as what I'm interested in showing is the thought process behind the tests and testers themselves. 
-
-The basic idea was we were redesigning their homepage & a few other templates (not by our choice, we never prefer to do just a part of a site, but that's neither here nor there) in a short time and roll user testing during the process. So, it wasn't perfect to start, but that was no ones fault really, and we all have these types of projects every now and again. 
+##But Srsly, When Does This Happen?
+**All the time unfortunately.** And I do mean all the time. Normally, I see it just in static web design critique by clients, but I also noticed this in a recent card sort/user test I was helping our agency run. The client doesn't matter, as what I'm interested in describing is the thought process behind the tests and testers themselves. The basic idea was we were redesigning their homepage & a few other templates (not by our choice, we never prefer to do just a part of a site, but that's neither here nor there) in a short time and had to roll user testing in during the process.
 
 So we designed and iterated and built a working prototype of the clients preferred direction, and then we began user testing. And again, there was nothing wrong with this. However, the questions and tasks asked of the users at this point is where we ran into issues, in my mind at least.
 
-Users were shown the working prototype and another design direction. They were then asked which they preferred, what content did they feel was more important or less important, what content was lacking, and what they thought of either direction overall. (Note: we did not create the tasks -- I noted my fears with these current tasks and how to better use this time, but...) So you can imagine where the users went with these. 
+Users were shown the working prototype and another design direction. They were then asked _which they preferred, what content did they feel was more important or less important, what content was lacking, and what they thought of either direction overall_. **(Note: we did not create the tasks -- I had noted my fears of these tasks prior and also suggestions on how to better use this time, but...)** So you can imagine where the users went with these. 
 
 
 ##I Had A Bad Nights Sleep
