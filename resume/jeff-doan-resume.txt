@@ -12,7 +12,7 @@ Peruse some of my skills
 
 - HTML of the 5th kind
 - CSS of the 3rd kind
-- Javascript / jQuery
+- JavaScript / jQuery
 - A smidge of PHP and a smattering of Ruby on Rails
 - Git & Markdown
 - Jekyll, Wordpress, Expression Engine & a wee bit of Ektron
@@ -32,10 +32,12 @@ CSS Developer
 Browsermedia/nclud
 JULY '11 -- PRESENT
 
-- Developed usable, optimized, speedy websites for multiple clients -- [some design], front-end coding & templates for Ruby on Rails / Java / WordPress / ExressionEngine / Codeigniter CMS integrations
-- Designed/built Facebook apps Led the design & development of mobile-specific template module for our open-source Ruby on Rails CMS: BrowserCMS
+- Developed usable, optimized, speedy websites for multiple clients -- [some design], front-end coding & templates for Ruby on Rails / Java / WordPress / Expression Engine / Codeigniter CMS integrations
+- Designed/built Facebook apps
+- Led the design & development of mobile-specific template module for our open-source Ruby on Rails CMS: BrowserCMS
 - Led card-sorting & conducted user-testing for client sites
-- Created HTML prototypes / for IA testing Spoke (& didn't voice crack) at multiple events
+- Created HTML prototypes / for IA testing
+- Spoke (& didn't voice crack) at multiple events
 
 ######
 
@@ -43,7 +45,7 @@ Sr. Interactive Designer
 Thinkdesign
 FEB '10 -- JULY '11
 
-- Developed usable, optimized websites for multiple clients -- wireframing, design, front-end coding, and CMS-integrations
+- Developed usable, optimized websites for multiple clients -- wireframing, design, front-end coding, and CMS integrations
 - Designed and developed HTML emails for national / international campaigns -- wireframing, design, coding, and testing
 - Designed banner ads (animated gif & flash [boo])
 - Created and implemented client PPC campaigns
@@ -69,7 +71,7 @@ FEB '05 -- APR '08
 - Developed direct mail for national campaigns
 - Designed ROP for national newspaper & magazine publications such as The Washington Post, The San Diego Tribune, The Wall Street Journal, and The Boston Globe
 - Worked closely with vendors managing multiple print jobs
-- Managed team with Junior designer
+- Managed team with junior designer
 
 ######
 
