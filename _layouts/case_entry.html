@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<header class="work i">
+	<h1>{{ page.title }}</h1>
+</header>
+<div class="work">
+	{{ content }}
+	{% if page.image %}
+	<figure>
+		<img src="{{ page.image }}" />
+		{% if page.image_desc %}
+		<figcaption>{{ page.image_desc }}</figcaption>
+		{% endif %}	
+	</figure>
+	{% endif %}
+	{% if page.image_2 %}
+	<figure>
+		<img src="{{ page.image_2 }}" />
+		{% if page.image_desc_2 %}
+		<figcaption>{{ page.image_desc_2 }}</figcaption>
+		{% endif %}	
+	</figure>
+	{% endif %}
+	{% if page.image_3 %}
+	<figure>
+		<img src="{{ page.image_3 }}" />
+		{% if page.image_desc_3 %}
+		<figcaption>{{ page.image_desc_3 }}</figcaption>
+		{% endif %}	
+	</figure>
+	{% endif %}
+	<div class="ex"><a href="/case-studies" class="button" data-icon="⇤">Back to Case Studies</a></div>
+</div>
