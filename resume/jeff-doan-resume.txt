@@ -1,0 +1,96 @@
+=========================================
+=                                       =
+=   Jeff Doan                           =
+=   Web Designer & Front-end Tinkerer   =
+=   @jefffis                            =
+=   http://jefff.co/                    =
+=   mailto:iam@jefff.co/                =
+=                                       =
+=========================================
+
+Peruse some of my skills
+
+- HTML of the 5th kind
+- CSS of the 3rd kind
+- Javascript / jQuery
+- A smidge of PHP and a smattering of Ruby on Rails
+- Git & Markdown
+- Jekyll, Wordpress, Expression Engine & a wee bit of Ektron
+- SEO-ness
+- Responsive Web Design & Dev
+- Mobile Design & Dev
+- Wireframing (I ❤ GoMockingbird app)
+- Photoshop / Illustrator / InDesign
+- HTML Email design, build & testing using Mailchimp or CampaignMonitor & Litmus
+- Basecamp
+- Tomfoolery
+- Being a music snob & hating on Facebook
+
+######
+
+CSS Developer
+Browsermedia/nclud
+JULY '11--PRESENT
+
+- Developed usable, optimized, speedy websites for multiple clients--[some design], front-end coding & templates for Ruby on Rails / Java / WordPress / ExressionEngine / Codeigniter CMS integrations
+- Designed/built Facebook apps Led the design & development of mobile-specific template module for our open-source Ruby on Rails CMS: BrowserCMS
+- Led card-sorting & conducted user-testing for client sites
+- Created HTML prototypes / for IA testing Spoke (& didn't voice crack) at multiple events
+
+######
+
+Sr. Interactive Designer
+Thinkdesign
+FEB '10--JULY '11
+
+- Developed usable, optimized websites for multiple clients--wireframing, design, front-end coding, and CMS-integrations
+- Designed and developed HTML emails for national / international campaigns--wireframing, design, coding, and testing
+- Designed banner ads (animated gif & flash [boo])
+- Created and implemented client PPC campaigns
+
+######
+
+eMarketing Manager
+Marketing General
+APR '08--FEB '10
+
+- Developed micro-sites for national campaigns--design, wireframing, and front-end coding
+- Developed HTML emails for national / international campaigns--wireframing, design, coding, and testing
+- Developed promotional, trigger-based, and newsletter HTML emails
+- Designed banner ads (animated gif & flash [boo])
+- Managed team with senior developer
+
+######
+
+Sr. Designer
+Healthy Back Store
+FEB '05--APR '08
+
+- Developed direct mail for national campaigns
+- Designed ROP for national newspaper & magazine publications such as The Washington Post, The San Diego Tribune, The Wall Street Journal, and The Boston Globe
+- Worked closely with vendors managing multiple print jobs
+- Managed team with Junior designer
+
+######
+
+Jr. Web Designer
+Sit4Less.com
+FEB '05--APR '08
+
+- Developed email and banner ads for national campaigns--wireframing, design, coding, and testing
+- Developed landing pages for national and local campaigns
+
+######
+
+Jr. Graphic Designer
+Rocket 9 Design
+FED '05--SEP '05
+
+- Created t-shirts, retooled website, developed direct mail
+
+######
+
+Education
+JAMES MADISON U 2004
+
+- B.S. in Studio Art, 3.28 G.P.A.

@@ -191,6 +191,41 @@ li strong, li em {
 	}
 }
 
+@media print {
+	header, .link, .intro {
+		display:none;
+	}
+	html, [role=main] {
+		border:0;
+		padding:0;
+		page-break-inside: avoid;
+		font-size:90%;
+		color:#333;
+	}
+	h2 {
+		margin:0;
+	}
+	h3 {
+		margin:0;
+	}
+	ul {
+		margin:0 0 1em;
+	}
+	h2 + h3 {
+		margin:.5em 0 1em;
+	}
+	h2 + ul {
+		margin-top:.5em;
+	}
+	li {
+		padding:0;
+		margin:0 .25em .25em;
+		color:#333;
+	}
+	li strong, li em {
+		color:#000;
+	}
+}
 
 
 
