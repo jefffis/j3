@@ -21,7 +21,7 @@ Peruse some of my skills
 - Mobile Design & Dev
 - Wireframing (I <3 GoMockingbird app)
 - Photoshop / Illustrator / InDesign
-- HTML Email design, build & testing using Mailchimp or CampaignMonitor & Litmus
+- HTML email design, build & testing using Mailchimp, CampaignMonitor & Litmus
 - Basecamp
 - Tomfoolery
 - Being a music snob & hating on Facebook
@@ -30,9 +30,9 @@ Peruse some of my skills
 
 CSS Developer
 Browsermedia/nclud
-JULY '11--PRESENT
+JULY '11 -- PRESENT
 
-- Developed usable, optimized, speedy websites for multiple clients--[some design], front-end coding & templates for Ruby on Rails / Java / WordPress / ExressionEngine / Codeigniter CMS integrations
+- Developed usable, optimized, speedy websites for multiple clients -- [some design], front-end coding & templates for Ruby on Rails / Java / WordPress / ExressionEngine / Codeigniter CMS integrations
 - Designed/built Facebook apps Led the design & development of mobile-specific template module for our open-source Ruby on Rails CMS: BrowserCMS
 - Led card-sorting & conducted user-testing for client sites
 - Created HTML prototypes / for IA testing Spoke (& didn't voice crack) at multiple events
@@ -41,10 +41,10 @@ JULY '11--PRESENT
 
 Sr. Interactive Designer
 Thinkdesign
-FEB '10--JULY '11
+FEB '10 -- JULY '11
 
-- Developed usable, optimized websites for multiple clients--wireframing, design, front-end coding, and CMS-integrations
-- Designed and developed HTML emails for national / international campaigns--wireframing, design, coding, and testing
+- Developed usable, optimized websites for multiple clients -- wireframing, design, front-end coding, and CMS-integrations
+- Designed and developed HTML emails for national / international campaigns -- wireframing, design, coding, and testing
 - Designed banner ads (animated gif & flash [boo])
 - Created and implemented client PPC campaigns
 
@@ -52,10 +52,10 @@ FEB '10--JULY '11
 
 eMarketing Manager
 Marketing General
-APR '08--FEB '10
+APR '08 -- FEB '10
 
-- Developed micro-sites for national campaigns--design, wireframing, and front-end coding
-- Developed HTML emails for national / international campaigns--wireframing, design, coding, and testing
+- Developed micro-sites for national campaigns -- design, wireframing, and front-end coding
+- Developed HTML emails for national / international campaigns -- wireframing, design, coding, and testing
 - Developed promotional, trigger-based, and newsletter HTML emails
 - Designed banner ads (animated gif & flash [boo])
 - Managed team with senior developer
@@ -64,7 +64,7 @@ APR '08--FEB '10
 
 Sr. Designer
 Healthy Back Store
-FEB '05--APR '08
+FEB '05 -- APR '08
 
 - Developed direct mail for national campaigns
 - Designed ROP for national newspaper & magazine publications such as The Washington Post, The San Diego Tribune, The Wall Street Journal, and The Boston Globe
@@ -75,16 +75,16 @@ FEB '05--APR '08
 
 Jr. Web Designer
 Sit4Less.com
-FEB '05--APR '08
+FEB '05 -- APR '08
 
-- Developed email and banner ads for national campaigns--wireframing, design, coding, and testing
+- Developed email and banner ads for national campaigns -- wireframing, design, coding, and testing
 - Developed landing pages for national and local campaigns
 
 ######
 
 Jr. Graphic Designer
 Rocket 9 Design
-FED '05--SEP '05
+FED '05 -- SEP '05
 
 - Created t-shirts, retooled website, developed direct mail
 
