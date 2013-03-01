@@ -1,0 +1,55 @@
+---
+layout: default
+title: Results
+---
+
+<div id="st-results-container"></div>
+
+<form><input type="text" id="st-search-input" class="st-search-input navbar-search"/></form>
+
+	{% if page.url == '/search/index.html' %}
+
+	<!-- Begin Results Swifttype -->
+	<script type="text/javascript">
+		var Swiftype = window.Swiftype || {};
+		(function() {
+		Swiftype.key = 'Cosdyq5ZTQArYr1p7FpU';
+		Swiftype.inputElement = '#st-search-input';
+		Swiftype.resultContainingElement = '#st-results-container';
+		Swiftype.attachElement = '#st-search-input';
+		Swiftype.renderStyle = "inline";
+
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.async = true;
+		script.src = "//swiftype.com/embed.js";
+		var entry = document.getElementsByTagName('script')[0];
+		entry.parentNode.insertBefore(script, entry);
+		}());
+	</script>
+	<!-- End Results Swifttype -->
+
+	{% else %}
+
+	<!-- Begin Swifttype -->
+	<script type="text/javascript">
+		var Swiftype = window.Swiftype || {};
+		(function() {
+		Swiftype.key = 'Cosdyq5ZTQArYr1p7FpU';
+		Swiftype.inputElement = '#st-search-input';
+		Swiftype.resultContainingElement = '#st-results-container';
+		Swiftype.attachElement = '#st-search-input';
+		Swiftype.renderStyle = "new_page";
+		Swiftype.resultPageURL = "/search/";
+
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.async = true;
+		script.src = "//swiftype.com/embed.js";
+		var entry = document.getElementsByTagName('script')[0];
+		entry.parentNode.insertBefore(script, entry);
+		}());
+	</script>
+	<!-- End Swifttype -->
+
+	{% endif %}
