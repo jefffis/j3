@@ -19,7 +19,7 @@ Peruse some of my skills
 - SEO-ness
 - Responsive Web Design & Dev
 - Mobile Design & Dev
-- Wireframing (I ❤ GoMockingbird app)
+- Wireframing (I <3 GoMockingbird app)
 - Photoshop / Illustrator / InDesign
 - HTML Email design, build & testing using Mailchimp or CampaignMonitor & Litmus
 - Basecamp
