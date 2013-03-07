@@ -90,7 +90,7 @@ a:active {
 }
 header h2 {
 	margin:.75em .6em;
-	padding:.5em;
+	padding:.5em 0;
 	text-align:right;
 	float:left;
 	position:relative;
@@ -745,6 +745,9 @@ article li, .thoughts article h2 {
 		position:relative;
 		top:-.25em;
 	}*/
+	header h2 {
+		padding:.5em;
+	}
 	header h3 {
 		font-size:1.25em;
 	}
