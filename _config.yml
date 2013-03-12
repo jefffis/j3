@@ -1,2 +1,3 @@
 auto: true
 permalink: /:categories/:title
+production_url: http://jefff.co/
