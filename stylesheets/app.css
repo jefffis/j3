@@ -738,6 +738,26 @@ article li, .thoughts article h2 {
 	list-style:disc;
 	margin:0 0 .5em;
 }
+.thoughts article ol {
+	padding:0;
+}
+.thoughts article ol li {
+	list-style:none;
+	padding:0 0 0 6em;
+	margin:0 0 2em;
+	counter-increment:this;
+	position:relative;
+}
+.thoughts article ol li:before {
+	content:'Step 'counter(this);
+	display:block;
+	opacity:.5;
+	font-size:150%;
+	font-weight:bold;
+	width:100%;
+	position:absolute;
+	left:0;
+}
 
 @media screen and (min-width:30em) {
 	/*header h2 span {
