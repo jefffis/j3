@@ -17,4 +17,14 @@ Somewhere recently I've noticed a disturbing trend: services like Spotify, Rdio 
 
 ##Shocking, Isn't It?
 
-Imagine being a musician and trying to adapt to these new services (which as much as I love/hate them, they seem to be the future) and struggling to make that lifestyle viable financially.
+Imagine being a musician and trying to adapt to these new services (which as much as I love/hate them, they seem to be the future) and struggling to make that lifestyle viable financially. I think I've got the solution though: **pay them more**.
+
+Of course, that's simple and everyone's thought of that already, but it's not happening. And I understand why as well -- the businesses are still businesses and want to make a profit. So, here's what I propse:
+
+##Offer a fourth (or fifth, or sixth) subscription plan
+
+...and call it something like **The Music Benefactor**. I figure if at $4.99/month, Spotify is happy and semi-loving life at this level. So, create an option, where I, the subscriber, can pay whatever I want. The base would be $4.99, but you can pay anything you want over that a month, and **IT ALL GOES** to the artists. I'm a semi-frugal, er frugal, person, and I would have no problem paying $15 or $20 a month if I knew that most of that was going to the artists. And, I'd wager many of my other hipster-ish cohorts would feel the same way.
+
+Or, just offer a few options for this, instead of allowing users to pay their own amount (this might be a financial headache splitting odd profits and whatnot). Something like $9.99, $14.99, and $25.99 would work to start with -- or at least to do some field testing with.
+
+**For Spotify and the likes, it's a win-win.** It's great PR-wise, and (hopefully) would make artists more inclinded to make their work accessible via these services.
