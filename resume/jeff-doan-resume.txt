@@ -4,7 +4,7 @@
 =   Web Designer & Front-end Tinkerer   =
 =   @jefffis                            =
 =   http://jefff.co/                    =
-=   mailto:iam@jefff.co/                =
+=   mailto:iam@jefff.co                 =
 =                                       =
 =========================================
 
@@ -92,7 +92,6 @@ FED '05 -- SEP '05
 
 ######
 
-Education
-JAMES MADISON U 2004
+Education / James Madison University 2004
 
 - B.S. in Studio Art, 3.28 G.P.A.
