@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jefff | Web Designer and Front-end Tinkerer. Music Snob. Husband. Nerd.</title>
+    <link>http://jefff.co/</link>
+    <atom:link href="http://jefff.co/rss.xml" rel="self" type="application/rss+xml" />
+    <description>The web sandbox of Jefff Doan; my work, my musings on web design, email design, and other web-related thingamajigs.</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for post in site.categories.thought %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://example.com{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>you@example.com (Your Name)</author>
+      <guid>http://example.com{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel> 
+</rss>
