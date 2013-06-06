@@ -216,6 +216,15 @@ figure.featured {
 figure.featured.giveabit {
 	background-image:url(http://jefff.co/images/giveabit-l.png);
 }
+figure.featured.yesno {
+	background-image:url(http://jefff.co/images/yesno-l.png);
+	max-width: 40em;
+	margin: 0 auto;
+}
+span.yesno {
+	background: #040407;
+	display: block;
+}
 figure a {
 	/*background:url(/images/dailytidbit.jpeg) no-repeat 0 0;
 	background-size:cover;*/
