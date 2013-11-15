@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="http://jefff.co//images/favicon.ico" />
 	<link rel="author" href="http://jefff.co/humans.txt" />
 	
-	<link href='http://fonts.googleapis.com/css?family=Domine:400,700|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	<!--<link href='http://fonts.googleapis.com/css?family=Domine:400,700|Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />-->
 	{% if page.url != '/resume/index.html' %}
 	<link href="/stylesheets/app.css" rel="stylesheet" type="text/css" />
 	{% else %}
@@ -21,6 +21,8 @@
 	<link rel="canonical" href="http://jefff.co{{ page.url | replace:'index.html',''}}" />
 	
 	<script type="text/javascript">
+
+	document.addEventListener("touchstart", function() {},false);
 
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-22790184-1']);
